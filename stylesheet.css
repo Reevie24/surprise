@@ -1,0 +1,329 @@
+                                         /*Default Values*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1, a{
+    font-family: 'Permanent Marker', cursive;
+    padding: 1em 0;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+    font-size: x-large;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto auto auto auto auto auto auto auto auto;
+}
+
+
+                                         /* battle.html */
+
+                                             /*header*/
+#top{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid white;
+}
+
+#links{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: start;
+    align-self: center;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+}
+
+.link:hover{
+    text-decoration: underline red;
+}
+
+#title{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    justify-self: end;
+    align-self: center;
+    border-left: solid 1px white;
+}
+
+#title-context{
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+                                             /*Main Context*/
+#main{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-gap: 1em;
+}
+
+                                                /*Title*/
+#fight-title{
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    padding: 0 0 2em 0;
+}
+
+#battle-title{
+    border: 10px solid white;
+    padding: 1em;
+}
+
+                                              /*Explanation*/
+#fight-explanation{
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0 0 2em 0;
+}
+
+
+                                               /*Shichimiya*/
+#shichimiya-text{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: center;
+    margin-left: 10%;
+    margin-bottom: 30%;
+}
+
+#shichimiya-image-first{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    position: relative;
+    top: 2.1%;
+    left: 50%;
+}
+
+#shichimiya-image-first img{
+    height: auto;
+    max-width: 120%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+}
+
+#shichimiya-gif-container{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    position: relative;
+    top: 2%;
+    left: 50%;
+}
+
+#shichimiya-gif{
+    display: block;
+    position: absolute;
+    bottom: 49.6%;
+    height: 15%;
+    width: 120%;
+}
+
+#shichimiya-image-last{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    position: relative;
+    top: 53.6%;
+    left: 50%;
+}
+
+#shichimiya-image-last img{
+    height: auto;
+    width: 120%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+}
+
+                                                /*Misato*/
+#misato-text{
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10%;
+}
+
+#misato-image{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    position: relative;
+    left: 50%;
+    top: 2%
+}
+
+#misato-image img{
+    height: auto;
+    max-width: 150%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+}
+
+#misato-gif-container{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    position: relative;
+    left: 50%;
+    bottom: 5%;
+}
+
+#misato-gif{
+    display: block;
+    position: absolute;
+    bottom: 37%;
+    height: 20%;
+    width: 135%;
+}
+
+#misato-image-last{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    position: relative;
+    top: 60%;
+    left: 50%;
+}
+
+#misato-image-last img{
+    height: 20%;
+    max-width: 135%;
+    justify-self: center;
+    align-self: center;
+}
+
+#misato-funny{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    position: relative;
+    top: 81%;
+    left: 50%;
+}
+
+#misato-funny img{
+    height: auto;
+    max-width: 135%;
+    justify-self: center;
+    align-self: center;
+}
+
+                                                /*Winner*/
+#battle-winner-title{
+    grid-column: 1/5;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
+    padding: 4em;
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+#battle-winner-shichimiya{
+    grid-column: 1/5;
+    grid-row: 7/8;
+    justify-self: center;
+    align-self: center;
+}
+
+#battle-winner{
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+    justify-self: center;
+    align-self: center;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#battle-winner-image{
+    grid-column: 3 / 5;
+    grid-row: 8 / 9;
+}
+
+#battle-winner-image img{
+    display: block;
+    position: relative;
+    bottom: -5%;
+    left: 10%;
+    min-height: 40%;
+    width: 80%;
+}
+
+#last-one{
+    grid-column: 1/5;
+    grid-row: 9/10;
+    justify-self: center;
+    align-self: center;
+    margin-top: -5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fight.html */
+
+
+
+/* rem.html */
+
+
+
+/* bulma.html */
+
+
+
+/* raphtalia.html */
+
+
+/* speedwagon.html */
+
+
+
+/* foxy.html */

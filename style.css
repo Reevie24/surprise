@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    padding: 1em 0;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+    font-size: x-large;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr repeat(2, minmax(auto, 25em)) 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+}
+
+#left{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+
+}
+
+#content-wrap{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#right{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    justify-self: center;
+    align-self: center;
+
+}
+
+#content-wrap h1{
+    text-align: center;
+}
+
+#index-link-container{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    text-align: center;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.index-link{
+    font-size: 3em;
+    color: white;
+}
+
+.index-link:hover {
+    background: url("https://i.pinimg.com/originals/e1/42/83/e142837aaa62188a40214b05244383d6.jpg") no-repeat center;
+    background-size: 99% 550%;
+    border-radius: 25px;
+    color: transparent;
+    justify-self: stretch;
+    align-self: stretch;
+}
